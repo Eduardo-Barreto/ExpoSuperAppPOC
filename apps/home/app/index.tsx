@@ -8,7 +8,7 @@ export default function Index() {
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
 
-      <Text>Esse é o app da Home! Clique nos ícones da navbar para navegar entre os outros apps!</Text>
+      <Text style={styles.text}>Esse é o app da Home! Clique nos ícones da navbar para navegar entre os outros apps!</Text>
       <Image
         source={require("@/assets/images/home.png")}
         style={styles.image}
@@ -26,5 +26,10 @@ const styles = StyleSheet.create({
   image: {
     width: 100,
     height: 100,
+  },
+  text: {
+    fontSize: 16,
+    textAlign: "center",
+    margin: 10,
   },
 });

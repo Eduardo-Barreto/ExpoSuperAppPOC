@@ -3,12 +3,12 @@ import { WebView } from 'react-native-webview';
 
 export default function PenguinTab(){
     const penguinAppUri = process.env.EXPO_PUBLIC_PENGUIN_APP_URI || 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    return Platform.OS == 'web' ? 
+    return Platform.OS == 'web' ?
     (
         <iframe
             style={styles.container}
             src={penguinAppUri}
-       /> 
+       />
     )
     : (
         <WebView

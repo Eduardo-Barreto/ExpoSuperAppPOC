@@ -1,7 +1,7 @@
 import { StyleSheet, Platform } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-export default function PenguinTab(){
+export default function HomeTab(){
     const homeAppUri = process.env.EXPO_PUBLIC_HOME_APP_URI || 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
     return Platform.OS == 'web' ?
     (

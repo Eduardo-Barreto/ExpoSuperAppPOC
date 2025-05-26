@@ -1,7 +1,7 @@
 import { StyleSheet, Platform } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-export default function ChameleonTab(){
+export default function RickTab(){
     return Platform.OS == 'web' ?
     (
         <iframe
